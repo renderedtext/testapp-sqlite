@@ -9,7 +9,7 @@ describe Product do
 
   it "validates presence of price" do
     product = Product.new(:name => 'Some product')
-    product.should be_invalid
+    product.should_not be_invalid
   end
 
 end
